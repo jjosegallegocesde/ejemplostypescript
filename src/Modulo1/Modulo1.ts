@@ -1,7 +1,14 @@
 import { Estudiante } from "../Interfaces/Estudiante"
+import {Persona,Persona2,Profesor2} from "../Clases/Estudiante"
 
 export let nombre:string
 export let notas:number[]=[2.5,3.8,4,2.8]
+
+let estudiantico:Persona=new Persona()
+estudiantico.direccion
+
+let profe:Profesor2= new Profesor2(5,estudiantico)
+
 
 let estudiantes:Estudiante[]=[
     {nombre:"Juan",notas:[2.5,3,4.5,5],estado:true},
